@@ -14,10 +14,10 @@ const NewsCard = ({ news }) => {
   } = news;
 
   return (
-    <div className="card bg-base-100 shadow-lg ml-3 mr-3 hover:shadow-xl transition duration-300 border border-base-200">
+    <div className="card bg-base-100 shadow-lg  hover:shadow-xl transition duration-300 border border-base-200">
 
       {/* Header */}
-      <div className="flex items-center justify-between p-4 bg-base-200 rounded-t-xl">
+      <div className="flex items-center justify-between p-4 bg-base-200 rounded-t-md">
         <div className="flex items-center gap-3">
           <img
             src={news.author.img}
@@ -54,7 +54,7 @@ const NewsCard = ({ news }) => {
         <img
           src={thumbnail_url}
           alt={title}
-          className="rounded-xl w-full h-70 object-cover"
+          className="rounded-md w-full h-70 object-cover"
         />
       </figure>
 
@@ -88,7 +88,7 @@ const NewsCard = ({ news }) => {
 
         {/* Button */}
         <div className="mt-4">
-          <button className="btn btn-primary btn-sm">
+          <button className="btn btn-secondary btn-sm">
             Read More →
           </button>
         </div>
